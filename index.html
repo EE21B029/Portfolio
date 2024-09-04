@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src = "maha (2).png" class="logo">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Portfolio</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <p>Hello, </p>
+            <h1>I'm <span>Mahalakshmi</span> Dodla</h1>
+            <h2>Full Stack Developer</h2>
+        </div>
+
+
+    </div>
+
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about_me.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Mahalakshmi, a student of Electrical Engineering at IIT Tirupati with a keen interest in web development. Currently, I am doing a web development internship, where I have the opportunity to explore and expand my skills in web applications.
+                    I enjoy coding and continuously seek to improve my skills and stay updated with the latest technologies. Outside of coding, I love traveling and exploring new places, which often inspires my work."My goal is to keep learning to create meaningful and innovative solutions."</p>
+
+                </p>
+                <div class="tab-title">
+                <p class ="tab-links active-link" onclick="opentab('skills and tools')" >Skills and Tools</p>
+                <p class ="tab-links" onclick="opentab('Experience')" >Experience</p>
+                <p class ="tab-links" onclick="opentab('Education')" >Education</p>
+                </div>
+                <div class="tab-contents active-tab" id ="skills and tools">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <lI>Javascript</lI>
+                        <li>Python</li>
+                        <li>Typescript</li>
+                        <li>DSA</li>
+                        <li>MongoDB</li>
+                        <li>React</li>
+                        <li>Swagger</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"  id="Experience">
+                    <ul>
+                        <li>Livana Technologies Private Limited<br><span>Full Stack Development Intern</span></li>
+                        <li>The company works in the innovation and enablement of shops and businesses to launch their E-Commerce
+                            platforms swiftly. </li>
+                        <li>Gained hands-on experience and knowledge in web development. </li>
+                        <li>Developed APIs for various functionalities within the project .</li>
+                        <li> Wrote and maintained the codebase for the API developed , ensuring it met project requirements and
+                            standards</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2025</span><br>Btech in Electrical Engineering at  IIT Tirupati</li>
+                        <li><span>2021</span><br>Narayana E-Techno</li>
+                        <li><span>2019</span><br>Sindhi High School </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------------Projects------------------------------->
+<div class="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="personal.png">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p>Designed and developed a responsive personal portfolio website 
+                    using HTML and CSS to showcase professional projects and skills across various devices.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="discord.png">
+                <div class="layer">
+                <h3>Discord Bot</h3>
+                    <p>Created a discord bot and a Python + MySQL server to maintain all Auth tokens and when a request comes
+                        from a given discord server, the bot prints ”Hello world ” + Discord Server name.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="inpainting (2).png">
+                <div class="layer">
+                    <h3>Image Inpainting</h3>
+                    <p>Developed an image inpainting project that removes unwanted objects by analyzing surrounding areas for 
+                        seamless and smooth reconstruction using exemplar based approach.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+
+<!-------------------------------------contact ---------------------------------->
+<div class="contact">
+    <div class="container">
+        
+    </div>
+</div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+</body>
+</html>
